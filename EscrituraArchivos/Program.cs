@@ -15,9 +15,15 @@ namespace EscrituraArchivos
             //si el archivo no existe creara el documento
             //si ya existe escribira en el 
             //true es para agregar y sobreescribir 
-
-            string[] lineas = { "primera linea ","segunda linea","tercera linea" };
             
+
+            string[] lineas =  new string[3];
+       
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("escribe un nombre");
+                lineas[i]=Console.ReadLine();
+            }
             //Recorre el arreglo 
             foreach (string line in lineas)
             {
