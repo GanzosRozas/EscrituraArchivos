@@ -16,7 +16,7 @@ namespace EscrituraArchivos
             //si ya existe escribira en el 
             //true es para agregar y sobreescribir 
             
-
+            
             string[] lineas =  new string[3];
        
             for (int i = 0; i < 3; i++)
