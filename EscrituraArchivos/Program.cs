@@ -11,24 +11,35 @@ namespace EscrituraArchivos
     {
         static void Main(string[] args)
         {
-            StreamWriter sw = new StreamWriter ("ejemplo.txt",true);
+            string marca = null, nombre = null, tipo = null;
+            int peso=0;
+
+          
+
+                Console.Write("escribe una marca de papas: ");
+                marca = Console.ReadLine();
+                Console.Write("Escribe el nombre de las papas: ");
+                nombre = Console.ReadLine();
+                Console.Write("Escribe el tipo de las papitas: ");
+                tipo = Console.ReadLine();
+                Console.Write("Escribe el peso de las papas: ");
+                peso = Int32.Parse(Console.ReadLine());
+
+            
+
+            papitas papitas = new papitas(marca,nombre,tipo,peso);
+            StreamWriter sw = new StreamWriter ("Papitas.txt",true);
             //si el archivo no existe creara el documento
             //si ya existe escribira en el 
             //true es para agregar y sobreescribir 
+
+
+
+
+
+           
+              sw.WriteLine(papitas.marca + "\t\t" + papitas.nombre  + "\t\t" + papitas.tipo + "\t\t" + papitas.Peso);
             
-            
-            string[] lineas =  new string[3];
-       
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine("escribe un nombre");
-                lineas[i]=Console.ReadLine();
-            }
-            //Recorre el arreglo 
-            foreach (string line in lineas)
-            {
-                sw.WriteLine(line);
-            }
             sw.Close();
             Console.WriteLine("archivo guardado");
             Console.ReadKey();
