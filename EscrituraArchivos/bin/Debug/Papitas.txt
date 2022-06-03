@@ -1,2 +1,3 @@
-sabritas		ruffles		crunch		60
-barcel		takis		morados		60
+sabritas	ruffles		originales	145g
+cheetos		cheetos		flamin hot	150g
+cheetos		cheetos		flamin-hot	150g

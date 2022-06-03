@@ -35,6 +35,7 @@ namespace EscrituraArchivos
                     peso = Int32.Parse(Console.ReadLine());
                 }
             }
+            
         }
     }
   
